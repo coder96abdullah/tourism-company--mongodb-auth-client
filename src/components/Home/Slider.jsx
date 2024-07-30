@@ -13,7 +13,7 @@ const Slider = () => {
           <div className="carousel w-full h-[700px]">
   <div id="slide1" className="carousel-item relative w-full ">
     <img
-      src="https://i.ibb.co/pL5wW88/download-6.jpg"
+      src="https://i.ibb.co/z2ynXVs/cover01.jpg"
       className="w-full" />
       {/* <div className='absolute top-2/4 right-1/4'>
       <p className='text-orange-400 text-7xl animate__animated animate__fadeInDown'>Travel & Adventures</p>
@@ -30,7 +30,7 @@ const Slider = () => {
   </div>
   <div id="slide2" className="carousel-item relative w-full">
     <img
-      src="https://i.ibb.co/tbFKpVp/download-7.jpg"
+      src="https://i.ibb.co/HVqjHT6/cover2.jpg"
       className="w-full" />
       {
         slideText
