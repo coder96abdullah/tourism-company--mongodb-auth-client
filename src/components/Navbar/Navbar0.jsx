@@ -15,7 +15,7 @@ const Navbar0 = () => {
   <NavLink to='/allTouristSpot'><li className='font-semibold text-gray-600 text-lg'><a>All Tourists Spot</a></li></NavLink>
   <NavLink to='/AddTouristSpot'><li className='font-semibold text-gray-600 text-lg'><a>Add Tourists Spot</a></li></NavLink>
   <NavLink to='/myList'><li className='font-semibold text-gray-600 text-lg'><a>My List</a></li></NavLink>
-  <NavLink to='/countries'><li className='font-semibold text-gray-600 text-lg'><a>Add Country</a></li></NavLink> 
+  
  </>
     return (
         <div>

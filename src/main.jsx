@@ -14,7 +14,7 @@ import AddTouristSpot from "./components/Navbar/AddTouristSpot";
 import MyList from "./components/Navbar/MyList";
 import CardDetails from "./components/Home/Cards/CardDetails";
 import UpdateTouristSpot from "./components/UpdateTouristSpot/UpdateTouristSpot";
-import Countries from "./components/Home/Countries/Countries";
+
 import Error from "./components/Error/Error";
 import CountryList from "./components/Home/CountryList";
 import AuthProvider from "./components/Provider/Provider";
@@ -66,10 +66,7 @@ const router = createBrowserRouter([
         loader:({params})=>fetch(`http://localhost:5000/tourists/${params.id}`)
         
       },
-      {
-        path:'/countries',
-        element:<Countries></Countries>
-      },
+     
       {
         path:'/countryList/:id',
         element:<CountryList></CountryList>,

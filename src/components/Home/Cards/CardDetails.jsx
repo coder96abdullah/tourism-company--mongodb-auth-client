@@ -13,10 +13,10 @@ const CardDetails = () => {
         shortDescription, 
         photo } = datas;
     return (
-        <div className='my-10'>
+        <div className='my-10 h-screen'>
             <div className='flex gap-2 border-2 rounded-lg p-10'>
                 <div className='flex-1'>
-                   <img className='w-[100%] rounded-lg' src={photo}alt="" />
+                   <img className='w-[100%] h-full rounded-lg' src={photo}alt="" />
                 </div>
                 <div className='flex-1 space-y-3 border-2 pl-10 rounded-lg pt-5'>
                     <h3 className='text-4xl font-bold'>{spotName}</h3>

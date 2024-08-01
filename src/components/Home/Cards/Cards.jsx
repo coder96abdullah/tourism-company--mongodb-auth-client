@@ -30,7 +30,10 @@ const Cards = () => {
   // console.log(cardDatas);
     return (
         <div className='py-20'>
-         
+         <div className='pb-20'>
+         <h2 className='text-orange-800 text-3xl text-center font-bold font-serif'>Featured tours</h2>
+            <p className='text-7xl text-center'>Most Popular Tours</p>
+         </div>
              <Swiper
         slidesPerView={3}
         spaceBetween={10}
@@ -57,11 +60,11 @@ const Cards = () => {
      
       
       <p className='text-left text-gray-700 text-sm'><span className='text-red-900 font-bold text-lg'>${card.averageCost}</span> /per person</p>
-      <p className='bg-orange-100 rounded-lg py-1'> {card.travelTime} {card.location}</p>
+      <p className='bg-orange-100 rounded-lg py-1'> {card.travelTime} + {card.location}</p>
       
       <div className="card-actions justify-center">
       <Link to={ `/carddetails/${card._id}`}>
-      <button className="btn btn-primary">View Details</button>
+      <button className="btn btn-primary my-3">View Details</button>
        </Link>
         
       </div>

@@ -15,7 +15,7 @@ const AllTouristSpot = () => {
           <button onClick={handleSort}  className='btn btn-success w-[150px] text-white font-bold text-lg'>Sort</button>
         </div>
 
-  <div className='grid grid-cols-3 gap-3'>
+  <div className='grid grid-cols-2 lg:grid-cols-3 gap-3'>
   {
                 spotd.map(d => 
                     <div key={d._id} className="card card-compact bg-base-100 shadow-xl">
