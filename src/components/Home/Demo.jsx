@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Demo = () => {
+    fetch('https://assignment10-mongodb-auth-server.vercel.app/tourists')
+    .then(res=>res.json())
+    .then(data=>console.log(data))
     return (
         <div>
             <div className='grid grid-cols-6'>

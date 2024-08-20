@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       {
         path: "/allTouristSpot",
         element: <AllTouristSpot />,
-        loader:()=>fetch('http://localhost:5000/tourists')
+      loader:()=>fetch('https://assignment10-mongodb-auth-server.vercel.app/tourists')
       },
       {
         path: "/addTouristSpot",
@@ -53,24 +53,24 @@ const router = createBrowserRouter([
       {
         path: "/myList",
         element: <PrivateRoute><MyList /></PrivateRoute>,
-        loader:()=>fetch('http://localhost:5000/tourists')
+        loader:()=>fetch('https://assignment10-mongodb-auth-server.vercel.app/tourists')
       },
       {
         path: "/carddetails/:id",
         element:<PrivateRoute><CardDetails /></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/tourists/${params.id}`)
+        loader:({params})=>fetch(`https://assignment10-mongodb-auth-server.vercel.app/tourists/${params.id}`)
       },
       {
         path:"/updateSpot/:id",
         element:<PrivateRoute><UpdateTouristSpot/></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/tourists/${params.id}`)
+        loader:({params})=>fetch(`https://assignment10-mongodb-auth-server.vercel.app/tourists/${params.id}`)
         
       },
      
       {
         path:'/countryList/:id',
         element:<CountryList></CountryList>,
-        loader:()=>fetch('http://localhost:5000/tourists')
+        loader:()=>fetch('https://assignment10-mongodb-auth-server.vercel.app/tourists')
       }
     ],
   },

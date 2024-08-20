@@ -36,7 +36,7 @@ const UpdateTouristSpot = () => {
      
     
 
-        fetch(`http://localhost:5000/tourists/${d._id}`, {
+        fetch(`https://assignment10-mongodb-auth-server.vercel.app/tourists/${d._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

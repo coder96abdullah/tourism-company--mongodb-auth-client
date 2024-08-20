@@ -35,7 +35,7 @@ const AddTouristSpot = () => {
      
         console.log(newSpot);
 
-        fetch('http://localhost:5000/tourists', {
+        fetch('https://assignment10-mongodb-auth-server.vercel.app/tourists', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

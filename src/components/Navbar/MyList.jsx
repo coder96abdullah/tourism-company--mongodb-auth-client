@@ -20,7 +20,7 @@ const MyList = () => {
         if (result.isConfirmed) {
 
 
-            fetch(`http://localhost:5000/tourists/${_id}`, {
+            fetch(`https://assignment10-mongodb-auth-server.vercel.app/tourists/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

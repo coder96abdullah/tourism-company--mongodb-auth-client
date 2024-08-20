@@ -18,12 +18,12 @@ const Cards = () => {
  
   const [cardDatas,setCardData]=useState([]);
   useEffect(()=>{
-    fetch('http://localhost:5000/tourists')
+    fetch('https://assignment10-mongodb-auth-server.vercel.app/tourists')
     .then(res=>res.json())
     .then(data=>setCardData(data))
   },[])
 
-  // fetch('http://localhost:5000/tourists')
+  // fetch('https://assignment10-mongodb-auth-server.vercel.app/tourists')
   // .then(res=>res.json())
   // .then(data=>setCardData(data))
   
